@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
@@ -9,7 +9,7 @@ const Navbar = () => {
       >
         <div className="flex flex-wrap items-center gap-4 w-full">
           <a href="https://readymadeui.com">
-            <h3 className="text-2xl font-semibold">Logo</h3>
+            <h3 className="text-2xl font-semibold">Career Quest</h3>
           </a>
 
           <div className="lg:!flex lg:flex-auto lg:ml-12 max-lg:hidden max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50">
@@ -50,12 +50,13 @@ const Navbar = () => {
                   </a>
                 </li>
                 <li className="max-lg:border-b max-lg:py-3">
-                  <a
+                  {/* <a
                     href="javascript:void(0)"
                     className="hover:text-[#007bff] text-white block font-bold text-[15px]"
                   >
                     Shop
-                  </a>
+                  </a> */}
+                  <Link to="/signin"></Link>
                 </li>
                 <li className="max-lg:border-b max-lg:py-3">
                   <a
@@ -99,12 +100,15 @@ const Navbar = () => {
           <div className="border-l border-[#333] h-6 max-lg:hidden"></div>
 
           <div className="flex items-center ml-auto space-x-6">
-            <a
+            {/* <a
               href="javascript:void(0)"
               className="hover:text-[#007bff] text-gray-600 block font-bold text-[15px]"
             >
               Log in
-            </a>
+            </a> */}
+            <Link to="/signin" className="text-white font-bold">
+              Log in
+            </Link>
             <button className="px-4 py-2.5 text-sm rounded font-bold text-white border-2 border-[#1d294f] bg-[#007bff] transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#1d294f]">
               Start free trial
             </button>
@@ -117,9 +121,9 @@ const Navbar = () => {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 ></path>
               </svg>
             </button>
